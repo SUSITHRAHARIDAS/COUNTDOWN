@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheets" href="index.css">
+
+    <style>
+        .bgimage{
+            background: #0850C8;
+background: -webkit-radial-gradient(center, #0850C8, #010A34);
+background: -moz-radial-gradient(center, #0850C8, #010A34);
+background: radial-gradient(ellipse at center, #0850C8, #010A34);
+        }
+
+.level{display:flex;
+flex-direction: column;
+padding-top :100px;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <script>
+    //overall outline container div
+    var outline = document.createElement('div')
+    outline.className=("container")
+
+    
+    //game logo - page1
+
+    var gamelogo = document.createElement('img')
+    gamelogo.setAttribute("src","logo.png") 
+    gamelogo.setAttribute("style","height:181px;width:678px;")
+
+    //page 1 content background
+    var bgimage = document.createElement('div')
+    bgimage.className =("bgimage")
+    bgimage.setAttribute("style","height:681px;width:678px;")
+    
+
+   var level =document.createElement('div')
+   level.className=("level")
+
+
+    //EASY LEVEL
+    var easy =document.createElement('a')
+    easy.setAttribute("style","height:50px;width:180px;color:white; margin-left:200px;text-align:center;font-size:40px;;border:2px solid  #0850C8")
+    easy.setAttribute("href","easy.html")
+    easy.innerHTML ="<b>EASY</b>"
+
+    //medium level
+    var medium =document.createElement('a')
+    medium.setAttribute("style","height:50px;width:180px;color:white; margin-left:200px;text-align:center;font-size:40px;margin-top:50px;border:2px solid  #0850C8")
+    medium.setAttribute("href","medium.html")
+    medium.innerHTML ="<b>MEDIUM </b>"
+
+    //hard level
+    var hard =document.createElement('a')
+    hard.setAttribute("style","height:50px;width:180px;color:white;  margin-left:200px;text-align:center;font-size:40px;margin-top:50px;border:2px solid  #0850C8")
+    hard.setAttribute("href","hard.html")
+    hard.innerHTML ="<b>HARD </b>"
+
+    //advance level
+    var advance =document.createElement('a')
+    advance.setAttribute("style","height:50px;width:180px;color:white; margin-left:200px;text-align:center;font-size:40px;margin-top:80px;border:2px solid  #0850C8")
+    advance.setAttribute("href","advance.html")
+    advance.innerHTML ="<b>ADVANCE </b>"
+
+      level.append(easy,medium,hard,advance)
+      bgimage.append(level)
+      outline.append(gamelogo,bgimage)
+      document.body.append(outline)
+    </script>
+    
+</body>
+</html>

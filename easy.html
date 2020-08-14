@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY</title>
+    <style>
+.bgimage{
+    background: #0850C8;
+background: -webkit-radial-gradient(center, #0850C8, #010A34);
+background: -moz-radial-gradient(center, #0850C8, #010A34);
+background: radial-gradient(ellipse at center, #0850C8, #010A34);
+}
+
+.box{
+    
+        display: grid; 
+         
+        grid-template-columns: 80px 80px 80px;  
+        grid-template-rows: 80px 80px 80px ;
+        height:200px;
+        width:200px;
+        margin-left: 200px;
+        padding-top: 270px;
+        
+       
+}
+.but{
+   font-weight: bold;
+   color:white;
+   font-size:xx-large;
+   background-color:#0850C8;}
+
+    </style>
+</head>
+<body>
+    <script>
+
+//overallcontainer
+
+var outline = document.createElement('div')
+    outline.className=("container")
+
+ //Easy content background
+ var bgimage = document.createElement('div')
+    bgimage.className =("bgimage")
+    bgimage.setAttribute("style","height:800px;width:678px;")
+
+ //puzzlearea
+    var puzzarea = document.createElement('div')
+   puzzarea.className =("puzzlearea")
+
+//3*3box
+var box =document.createElement('div')
+box.className=("box")
+
+
+var b1=document.createElement('button')
+b1.className=("but")
+b1.innerText ="1"
+var b2=document.createElement('button')
+b2.className=("but")
+b2.innerText ="2"
+var b3=document.createElement('button')
+b3.className=("but")
+b3.innerText ="3"
+var b4=document.createElement('button')
+b4.className=("but")
+b4.innerText ="4"
+var b5=document.createElement('button')
+b5.className=("but")
+b5.innerText ="5"
+var b6=document.createElement('button')
+b6.innerText ="6"
+b6.className=("but")
+var b7=document.createElement('button')
+b7.innerText ="7"
+b7.className=("but")
+var b8=document.createElement('button')
+b8.innerText ="8"
+b8.className=("but")
+var b9=document.createElement('button')
+b9.className=("but")
+b9.innerText =""
+
+
+
+
+box.append(b1,b2,b3,b4,b5,b6,b7,b8,b9)
+puzzarea.append(box)
+bgimage.append(puzzarea)
+
+outline.append(bgimage)
+document.body.append(outline)
+    </script>
+
+    
+</body>
+</html>

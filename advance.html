@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCE</title>
+    <style>
+.bgimage{
+    background: #0850C8;
+background: -webkit-radial-gradient(center, #0850C8, #010A34);
+background: -moz-radial-gradient(center, #0850C8, #010A34);
+background: radial-gradient(ellipse at center, #0850C8, #010A34);
+}
+
+.box{
+    
+        display: grid; 
+         
+        grid-template-columns: 60px 60PX 60PX 60PX 60PX 60PX;  
+        grid-template-rows: 60px 60PX 60PX 60PX 60PX 60PX;  
+        height:150px;
+        width:150px;
+        margin-left: 135px;
+        padding-top: 180px;
+        
+       
+}
+.but{
+   font-weight: bold;
+   color:white;
+   font-size:xx-large;
+   background-color:#0850C8;}
+
+    </style>
+</head>
+<body>
+    <script>
+
+//overallcontainer
+
+var outline = document.createElement('div')
+    outline.className=("container")
+
+ //Easy content background
+ var bgimage = document.createElement('div')
+    bgimage.className =("bgimage")
+    bgimage.setAttribute("style","height:800px;width:678px;")
+
+ //puzzlearea
+    var puzzarea = document.createElement('div')
+   puzzarea.className =("puzzlearea")
+
+//6*6 box
+var box =document.createElement('div')
+box.className=("box")
+
+
+var b1=document.createElement('button')
+b1.className=("but")
+b1.innerText ="1"
+var b2=document.createElement('button')
+b2.className=("but")
+b2.innerText ="2"
+var b3=document.createElement('button')
+b3.className=("but")
+b3.innerText ="3"
+var b4=document.createElement('button')
+b4.className=("but")
+b4.innerText ="4"
+var b5=document.createElement('button')
+b5.className=("but")
+b5.innerText ="5"
+var b6=document.createElement('button')
+b6.innerText ="6"
+b6.className=("but")
+var b7=document.createElement('button')
+b7.innerText ="7"
+b7.className=("but")
+var b8=document.createElement('button')
+b8.innerText ="8"
+b8.className=("but")
+var b9=document.createElement('button')
+b9.className=("but")
+b9.innerText ="9"
+var b10=document.createElement('button')
+b10.className=("but")
+b10.innerText ="10"
+var b11=document.createElement('button')
+b11.className=("but")
+b11.innerText ="11"
+var b12=document.createElement('button')
+b12.className=("but")
+b12.innerText ="12"
+var b13=document.createElement('button')
+b13.className=("but")
+b13.innerText ="13"
+var b14=document.createElement('button')
+b14.className=("but")
+b14.innerText ="14"
+var b15=document.createElement('button')
+b15.className=("but")
+b15.innerText ="15"
+var b16=document.createElement('button')
+b16.className=("but")
+b16.innerText ="16"
+var b17=document.createElement('button')
+b17.className=("but")
+b17.innerText ="17"
+var b18=document.createElement('button')
+b18.className=("but")
+b18.innerText ="18"
+var b19=document.createElement('button')
+b19.className=("but")
+b19.innerText ="19"
+var b20=document.createElement('button')
+b20.className=("but")
+b20.innerText ="20"
+var b21=document.createElement('button')
+b21.className=("but")
+b21.innerText ="21"
+var b22=document.createElement('button')
+b22.className=("but")
+b22.innerText ="22"
+var b23=document.createElement('button')
+b23.className=("but")
+b23.innerText ="23"
+var b24=document.createElement('button')
+b24.className=("but")
+b24.innerText ="24"
+var b25=document.createElement('button')
+b25.className=("but")
+b25.innerText ="25"
+var b26=document.createElement('button')
+b26.className=("but")
+b26.innerText ="26"
+var b27=document.createElement('button')
+b27.className=("but")
+b27.innerText ="27"
+var b28=document.createElement('button')
+b28.className=("but")
+b28.innerText ="28"
+var b29=document.createElement('button')
+b29.className=("but")
+b29.innerText ="29"
+var b30=document.createElement('button')
+b30.className=("but")
+b30.innerText ="30"
+var b31=document.createElement('button')
+b31.className=("but")
+b31.innerText ="30"
+var b32=document.createElement('button')
+b32.className=("but")
+b32.innerText ="32"
+var b33=document.createElement('button')
+b33.className=("but")
+b33.innerText ="33"
+var b34=document.createElement('button')
+b34.className=("but")
+b34.innerText ="34"
+var b35=document.createElement('button')
+b35.className=("but")
+b35.innerText ="35"
+var b36=document.createElement('button')
+b36.className=("but")
+b36.innerText =""
+
+
+
+
+box.append(b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,
+b26,b27,b28,b29,b30,b31,b32,b33,b34,b35,b36)
+puzzarea.append(box)
+bgimage.append(puzzarea)
+
+outline.append(bgimage)
+document.body.append(outline)
+    </script>
+</body>
+</html>
